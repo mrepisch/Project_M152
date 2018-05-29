@@ -1,6 +1,10 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head> 
     <body>
         <div id="header">
@@ -9,11 +13,35 @@
         <div id="content">
             <div id="thumbnails">
                 
+                <div class="row">
+                  <div id="00" class="col-sm-4"></div>
+                  <div id="10" class="col-sm-4"></div>
+                  <div id="20" class="col-sm-4"></div>
+                </div>
+                <div class="row">
+                  <div id="01" class="col-sm-4"></div>
+                  <div id="11" class="col-sm-4"></div>
+                  <div id="21" class="col-sm-4"></div>
+                </div>
+                <div class="row">
+                  <div id="02" class="col-sm-4"></div>
+                  <div id="12" class="col-sm-4"></div>
+                  <div id="22" class="col-sm-4"></div>
+                </div>
+                <div class="row">
+                  <div id="03" class="col-sm-4"></div>
+                  <div id="13" class="col-sm-4"></div>
+                  <div id="23" class="col-sm-4"></div>
+                </div>
             </div>
             
-            <--! Usualy hidden --></--!>
+            <!-- Usualy hidden -->
             <div id="zoom">
-            
+                <div id="image">
+                </div>
+                <div id="closeBtn">
+                    <button onclick="closePic()">Back</button>
+                </div>
             </div>
         </div>
         
@@ -23,13 +51,37 @@
         <script>
             $(document).ready(function(){
                 $("#zoom").hide();
-                var amountOfPics = 3;
+                var amountOfPics = 12;
                 var i = 0;
+                var x = 0;
+                var y = 0;
                 for( i = 0; i < amountOfPics; i++)
                     {
-                        $("#thumbnails").add("<img src='/Pics/" + i + ".jpg'  width='100' height='100' />",)
+                        
+                        //The new generated pictures have the class galerie for manipulating it in the css
+                        $("#"+String(x)+String(y)).append("<img class='galerie' src='Pics/" + i + ".jpg'  width='300' height='300' />",)
+                        x += 1;
+                        if( x == 3)
+                            {
+                                x = 0;
+                                y += 1;
+                            }
                     }
+                    $('.galerie').on("click", function() {
+                        console.log($(this).attr("src"));
+                        $("#zoom").show();
+                        $("#thumbnails").hide();
+                        $("#image").append("<img id='fullpic' src='"+ $(this).attr("src") +"'  width='100%' height='90%' />",)
+                    });
+                
+                    
                 });
+            function closePic()
+            {
+                $("#zoom").hide();
+                $("#thumbnails").show();
+                $("#fullpic").remove();
+            }
         </script>
     </body>
 </html>
