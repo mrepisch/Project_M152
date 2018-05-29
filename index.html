@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head> 
+    <body>
+        <div id="header">
+            <h1>Some header content here !!!</h1>
+        </div>
+        <div id="content">
+            <div id="thumbnails">
+                
+            </div>
+            
+            <--! Usualy hidden --></--!>
+            <div id="zoom">
+            
+            </div>
+        </div>
+        
+        <div id="fotter">
+        
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#zoom").hide();
+                var amountOfPics = 3;
+                var i = 0;
+                for( i = 0; i < amountOfPics; i++)
+                    {
+                        $("#thumbnails").add("<img src='/Pics/" + i + ".jpg'  width='100' height='100' />",)
+                    }
+                });
+        </script>
+    </body>
+</html>
