@@ -47,7 +47,7 @@ footer p a {
 }
 
 .bg-light {
-  background-color: #0D6224 !important;
+  background-color: #004412 !important;
 }
 
 .footerFixed {
@@ -62,4 +62,12 @@ body {
   position: relative;
   padding-bottom: 120px;
   min-height: 100%;
+}
+
+.card-body {
+  background-color: #00280B;
+}
+
+.card-text {
+  color: white;
 }
