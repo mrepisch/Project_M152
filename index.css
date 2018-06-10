@@ -1,0 +1,177 @@
+body {
+    height:100%;
+
+}
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+#footer
+{
+    width:100% !important;
+}
+
+.footer p a {
+  color: #459C5C;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.bg-dark {
+ background-color: #0D6224 !important;
+
+}
+
+.bg-light {
+  /*background-color: #004412 !important;*/
+            background-image: url("Pics/8.jpg");
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.album
+{
+    margin-bottom: 45%;
+}
+
+.card-body {
+  background-color: #00280B;
+}
+
+.card-text {
+  color: white;
+}
+.navigation
+{
+
+    background-color:  rgba(13,98,36,0.7) !important;
+    border: 2px solid #0D6224;
+        border-radius: 25px;
+    margin-top: -10%;
+    margin-bottom: 10%;
+
+
+}
+
+
+.bg-med
+{
+    background-color: rgba(69,156,92,0.7);
+        border: 2px solid #459C5C;
+        border-radius: 25px;
+}
+
+bg-med2
+{
+    background-color: rgba(69,156,92,0.7);
+        border: 2px solid #459C5C;
+        padding-left:10px;
+    
+}
+
+.inactive
+{
+    color: white !important;
+    padding-left: 20px;
+}
+.chosen a
+{
+    color:#459C5C !important;
+    padding-left: 20px;
+    
+}
+
+.producer{
+    color:white;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.title
+{
+    color:white;
+    text-align: center;
+}
+
+.actor
+{
+    color:white;
+    font-size: 25pt;
+    text-align: center;
+    margin: auto;
+}
+
+.title_description
+{
+    padding-top: 30px;
+        color:white;
+    padding-left:5%;
+    font-size: 24pt;
+}
+.description
+{
+    color:white;
+    font-size: 16pt;
+    padding-left:5%;
+    margin: auto;
+    
+}
+
+#player{
+    padding-left: 5%;
+}
+#video
+{   
+
+    width:100%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    padding-left: 1%;
+    margin-left: 50%:
+    
+}
+
+.last-desc
+{
+    padding-bottom: 50px;
+}
+
+.navi2
+{
+    width:270% !important;
+}
+
+
+.btn
+{
+    color:white !important;
+}
