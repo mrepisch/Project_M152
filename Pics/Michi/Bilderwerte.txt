@@ -1,0 +1,20 @@
+Bild 1
+
+ISO: ISO 400
+Brennweite: 4.8 mm
+Belichtungszeit: 1/250 Sekunde
+Blende: f / 2.8
+
+Bild 2
+
+ISO: ISO 400
+Brennweite: 4.8 mm
+Belichtungszeit: 1/200 Sekunde
+Blende: f / 2.8
+
+Bild 3
+
+ISO: ISO 400
+Brennweite: 8.5 mm
+Belichtungszeit: 1/80 Sekunde
+Blende: f / 3.2

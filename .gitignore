@@ -3,6 +3,7 @@
 
 *.mp4
 *.ogv
+*.webm
 
 # User-specific stuff
 .idea/**/workspace.xml
