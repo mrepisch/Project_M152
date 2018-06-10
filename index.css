@@ -143,21 +143,18 @@ bg-med2
     font-size: 16pt;
     padding-left:5%;
     margin: auto;
-    
 }
 
 #player{
     padding-left: 5%;
 }
 #video
-{   
-
+{
     width:100%;
     padding-top: 10%;
     padding-bottom: 3%;
     padding-left: 1%;
-    margin-left: 50%:
-    
+    margin-left: 50%;
 }
 
 .last-desc
