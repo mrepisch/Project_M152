@@ -149,3 +149,7 @@ bg-med2 {
 .btn {
     color: white !important;
 }
+
+* {
+    font-family: Titlium !important;
+}
